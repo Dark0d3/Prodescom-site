@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.chalWrap {
+    margin:0;
+    display: flex;
+    min-width: 100%;
+    /* padding-top: 14rem; */
+    height: 72rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:#38d39f;
+}
+
+.evIm {
+    margin-top :5rem;
+    width: 80%;
+}
+
+.chalTx {
+    z-index: 10;
+    margin: 6rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chalTxHead {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.chalTxCont {
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-weight: 0.8rem;
+    text-align: center;
+}
+
+.blob {
+    position: absolute;
+    top: 28rem;
+    right: -14rem;
+    width: 24rem;
+}
+
+.chalSplit {
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.chalSplitSec {
+    text-align: center; 
+    margin: 1.5rem 0;   
+}
+
+.chalSplitHead {
+    font-family: 'Merriweather','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.chalSplitCont {
+    font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.chalSplitCont2 {
+    font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 0.8rem;
+    font-weight: 350;
+    color: #ffffff;
+}
+
+.chalSplitImg1 img{
+    margin: 0.5rem;
+    width: 40%;
+}
+
+
+.chalSplitImg2 img{
+    margin: 0.5rem;
+    width: 50%;
+}
+
+.chalSplitLine {
+    display: none;
+    /* border: 2px solid #3f3d56; */
+}
+
+th, td {
+    padding: 0.4rem 1rem;
+    text-align: center;
+}
+
+/* td {
+    padding: 0.4rem 1rem;
+    text-align: left;
+} */
+
+@media (min-width: 500px)  {
+    .chalWrap {
+        padding: 0rem 4rem;
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .blob {
+        top: 34rem;
+        right: -16rem;
+        width: 37.5rem;
+    }
+
+    .evIm {
+        margin: 0;
+        order: -1;
+        width: 35%;
+    }
+    
+    .timCont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chalTx {
+        width: 90%;
+        margin: 2rem 2rem;
+    }
+
+    .chalTxHead {
+        font-size: 2.5rem;
+    }
+
+    .chalTxCont {
+        width: 70%;
+
+        font-size: 1.2rem;
+    }
+
+    .chalSplit {
+        flex-direction: row;
+        /* justify-content: space-around;
+        align-items: center; */
+    }
+
+    .chalSplitSec {
+        width: 50%;
+        margin: 0;
+    }
+
+    .chalSplitLine {
+        display: block;
+        height: 95%;
+        width: 1px;
+        background: #ffffff;
+        /* border: 2px solid #3f3d56; */
+    }
+    
+}
+
+@media (min-width: 1025px) {
+
+    .blob {
+        top: 30rem;
+    }
+    
+}
+
+
+
+
+

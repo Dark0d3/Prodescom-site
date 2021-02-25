@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+.Toolbar {
+    min-width: 100%;
+    top: -1.3rem;
+    position: absolute;
+    height:8rem;
+    /* height: 20%; */
+    left: 1rem;
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+
+.Logo {
+    height: 100%;
+}
+
+.NavItems {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    /* .DesktopOnly {
+        display: none;
+    } */
+
+    /* .Logo {
+        height: 100%;
+    } */
+
+    .Toolbar {
+        left: 3rem;
+        top: -2rem;
+        min-width: 90%;
+        height: 12rem;
+    }
+
+    .NavItems {
+        display: block;
+    }
+
+} 

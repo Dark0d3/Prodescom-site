@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.blogCont {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+
+.blogTxHead {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 0.05rem;
+    margin: 0;
+    color: #222324;
+}
+
+
+.blogPostList {
+    margin: 0.5rem 0rem;
+}
+
+.blogPostTx {
+    width: 80%;
+    margin: 2.5rem 0rem;
+}
+
+.blogPostTxHead {
+    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+    color: #222324;
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.9;
+    /* text-decoration: underline; */
+}
+
+.blogPostTxCont {
+    font-family: 'Merriweather','Montserrat', 'Times New Roman', Times, serif;
+    color: #222324;
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.blogPostTxCont p {
+    margin: 0;
+}
+
+.postDate {
+    font-family: 'Merriweather', 'Montserrat', 'Times New Roman', Times, serif;
+    color: #222324;
+    font-size: 0.8rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+
+.blob {
+    position: absolute;
+    top: -27rem;
+    left: -16rem;
+    width: 48rem;
+}
+
+.blogPostTxHead:hover {
+    text-decoration: underline;
+}
+
+
+
+@media (min-width: 640px) {
+    .blob {
+        top: -17rem;
+        left: -13rem;
+        width: 37.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* colors
+#3f3d56 black
+#2f2e41 black2
+#38d39f  green */

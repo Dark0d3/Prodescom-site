@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.prPWrap {
+    display: flex;
+    min-width: 100%;
+    /* height: 37.5rem; */
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.prPWrap2 {
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: #38d39f;
+    /* background: #f2f5f7; */
+}
+
+.wave {
+    transform: scale(2,1.2)
+}
+
+.prPIm {
+    margin-top :5rem;
+    width: 80%;
+}
+
+.prPTx {
+    z-index: 10;
+    margin: 2rem;
+}
+
+.prPTxHead {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-weight: 550;
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+}
+
+.prPTxCont {
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: 0.8rem;
+}
+
+ul {
+    font-size: 1.1rem;
+    list-style-type: circle;
+    /* padding: 0; */
+}
+
+
+@media (min-width: 500px) {
+    .prPWrap {
+        margin:0;
+        height: 90vh;
+    }
+
+    .prPWrap2 {
+        margin:0;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 90vh;
+    }
+
+
+    .prPIm {
+        margin: 0;
+        order: 1;
+        width: 40%;
+    }
+
+    .prPTx {
+        /* margin-left: 7rem; */
+        width: 40%;
+    }
+
+    .prPTxHead {
+        font-size: 2.5rem;
+    }
+
+    .prPTxCont {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+}
+
+
+
+
+/* colors
+#3f3d56 black
+#2f2e41 black2
+#38d39f  green */

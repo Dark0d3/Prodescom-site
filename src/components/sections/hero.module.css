@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.heroWrap {
+    display: flex;
+    min-width: 100%;
+    /* height: 37.5rem; */
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: #f2f5f7;
+}
+
+.heroIm {
+    margin-top :8rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.hstuff {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.heroTx {
+    z-index: 10;
+    /* margin: 2rem; */
+}
+
+.heroTxHead {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    margin: 0;
+    color: #222324;
+}
+
+.herotextcontent {
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    color: #222324;
+    font-weight: 0.8rem;
+}
+
+/* .regBtn {
+    padding: 0.5rem;
+    width: 8rem;
+    border: 3px solid #38d39f;
+    border-radius: 8px; 
+    text-align: center;
+    font-family: 'Raleway', 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.regBtn :hover {
+    border: 3px solid #3f3d56;
+    background: #3f3d56;
+    color: #38d39f;
+} */
+
+.rgBtn {
+    padding: 0.5rem 1.5rem;
+    width: 8rem;
+    border: 3px solid #38d39f;
+    background: #f2f5f7;
+    border-radius: 8px; 
+    text-align: center;
+    font-family: 'Raleway', 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #3f3d56;
+    /* text-decoration: none;
+    color: #3f3d56; */
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.rgBtn:hover{
+    border: 3px solid #3f3d56;
+    background: #3f3d56;
+    color: #38d39f;
+}
+
+
+.blob {
+    position: absolute;
+    top: -27rem;
+    left: -16rem;
+    width: 48rem;
+}
+
+.downArr {
+    display: none;
+}
+
+.animatedWords {
+    display: inline;
+}
+
+.animatedWords span:nth-child(2) { 
+    -webkit-animation-delay: 3s; 
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+    color: #222324;
+}
+.animatedWords span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    -ms-animation-delay: 6s; 
+    animation-delay: 6s; 
+    color: #222324; 
+}
+.animatedWords span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+    -ms-animation-delay: 9s; 
+    animation-delay: 9s; 
+    color: #222324;
+}
+.animatedWords span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+    -ms-animation-delay: 12s; 
+    animation-delay: 12s; 
+    color: #222324;
+}
+.animatedWords span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+    -ms-animation-delay: 15s; 
+    animation-delay: 15s; 
+    color: #222324;
+}
+
+.animatedWords span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    color: #222324;
+    -webkit-animation: animateWord 18s linear infinite 0s;
+    -ms-animation: animateWord 18s linear infinite 0s;
+    animation: animateWord 18s linear infinite 0s;
+}
+
+
+@media (min-width: 640px) {
+    .heroWrap {
+        margin:0;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100vh;
+    }
+
+    .blob {
+        top: -17rem;
+        left: -13rem;
+        width: 37.5rem;
+    }
+    
+    .heroIm {
+        margin: 0;
+        order: 1;
+        width: 40%;
+    }
+
+    .hstuff {
+        margin-left: 4rem;
+    }
+
+    .heroTx {
+        width: 40%;
+    }
+
+    .heroTxHead {
+        font-size: 2.5rem;
+    }
+
+    .herotextcontent {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .downArr {
+        display: block;
+        width: 1.5rem;
+        position: absolute;
+        bottom: 2.5rem;
+        left: 50%;
+        opacity: 0.8;
+    }
+}
+
+@media (min-width: 1200px) {
+    .heroTxHead {
+        font-size: 4rem;
+    }
+}
+
+
+
+
+@-webkit-keyframes animateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-10px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(10px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+
+
+/* colors
+#3f3d56 black
+#2f2e41 black2
+#38d39f  green */

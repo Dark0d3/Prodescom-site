@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.evPWrap {
+    display: flex;
+    min-width: 100%;
+    /* height: 65rem; */
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: #f2f5f7;
+}
+
+.evPIm {
+    margin-top :8rem;
+    width: 80%;
+}
+
+.evPTx {
+    z-index: 10;
+    margin: 2rem;
+}
+
+.evPTxHead {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    color: #222324;
+}
+
+.evPTxCont {
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    color: #222324;
+    font-weight: 0.8rem;
+}
+
+.evPTxContH {
+    font-weight: 600;
+    z-index: inherit;
+}
+
+.evPTxContC {
+    font-size: 0.9rem;
+}
+
+.blob {
+    position: absolute;
+    top: 96rem;
+    left: -20rem;
+    width: 32rem;
+}
+
+
+
+@media (min-width: 500px) {
+    .evPWrap {
+        margin:0;
+        padding-top: 6rem;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100vh;
+    }
+
+    .blob {
+        top: 72rem;
+        left: -20rem;
+        width: 37.5rem;
+    }
+    
+    .evPIm {
+        margin: 0;
+        order: 1;
+        width: 40%;
+    }
+
+    .evPTx {
+        /* margin-left: 7rem; */
+        width: 40%;
+    }
+
+    .evPTxHead {
+        font-size: 2.5rem;
+    }
+
+    .evPTxCont {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+}
+
+
+
+
+/* colors
+#3f3d56 black
+#2f2e41 black2
+#38d39f  green */
